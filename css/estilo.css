@@ -1,0 +1,486 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior:smooth !important;
+}
+body {
+	
+	font-family: 'Playfair Display', sans-serif;
+	font-size: 20px;
+	background-image: url("logoannlashminkk.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+header{
+	width: 100%;
+	height: 600px;
+	top: 0px;
+	left: 0px;
+	background-image: url(../annheader2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ann-titulo{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+}
+
+.ann-titulo h1{
+	padding: 20px;
+	font-size: 60px;
+	margin-bottom: 10px;
+	background-color: #ff9ffbb3;
+}
+
+.nav_contenedor{
+	width: 100%;
+}
+	
+
+.nav_ul{
+	background-color: #ff9ffb;
+	font-size: 25px;
+	width: 100%;
+	height: 50px;
+	opacity: .7;
+	position: fixed;
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	margin: auto;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+}
+
+.nav_li a{
+	font-weight: 600;
+	text-decoration: none;
+	color: #000;
+}
+.navlogo{
+	height: 45px;
+
+}
+
+#icon-menu{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 20px;
+	top: 0px;
+	padding: 10px;
+	font-size: 20;
+	/*border-radius: 100%;*/
+	color: #000;
+	z-index: 100;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	/*background-color: #ff9ffb;*/
+	opacity: .7;
+}
+
+.menu-ann{
+	width: 100%;
+	height: 50px;
+	margin: auto;
+	background-color: #ff9ffb;
+	opacity: .7;
+	padding-left: 55px;
+	position: fixed;
+	z-index: 100;
+	display: none;
+	align-items: center;
+}
+
+.texto p{
+	font-family: 'Raleway', sans-serif;
+	padding: 20px;
+}
+
+.texto{
+	width: 100%;
+	padding: 20px 0px 20px 20px;
+}
+
+
+.quienes{
+	display: flex;
+	padding: 50px 0px 50px 50px;
+ }
+
+.quienes h2 , .cursos h2 , .servicios h2{
+	background-color: #101010;
+	color: #fff;
+	font-size: 35px;
+	padding: 20px;
+}
+
+.quienes img, .cursos img, .servicios img{
+	width: 600px;
+}
+
+.cursos{
+	display: flex;	
+	flex-direction: row-reverse;
+	padding: 50px 50px 50px 0px;
+}
+.cursos .texto{
+	padding: 20px 20px 20px 0px;
+}
+
+.servicios{
+	display: flex;
+	padding: 50px 0px 50px 50px;
+}
+
+
+.faqs{
+	width: 100%;
+	display: flex;
+	text-align: center;
+	padding: 50px 0px 50px 0px;
+}
+
+.faqs .texto{
+	width: 100%;
+	padding: 0px;
+	padding-bottom: 50px;
+}
+
+.faqs p{
+	width: 100%;
+	padding: 10px 50px;
+
+}
+
+.faqs h2{
+	width: 100%;
+	font-size: 35px;
+	padding: 20px;
+	background-color: #101010 ;
+	color: #FFF;
+}
+
+.contacto{
+	width: 95%;
+	max-width: 1100px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	margin-top: 25px;
+	padding-top: 25px;
+}
+
+.contacto .texto{
+	background-color: #101010 ;
+	border-bottom: solid #FFF 3px;
+}
+
+.contacto h2{
+	font-size: 35px;
+	margin-bottom: 15px;
+	color: #FFF;
+}
+
+.contacto p{
+	margin-bottom: 50px;
+	padding: 0px;
+	color: #FFF;
+}
+
+.contacto a{
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	margin-bottom: 50px;
+	color: #000;
+	font-weight: 700;
+	color: #FFF;
+
+}
+
+.contacto a i{
+	color: #ff9ffb;
+	margin-right: 10px;
+
+}
+
+.contacto form{
+}
+
+.contacto form .campo, textarea{
+	width: 100%;
+	padding: 15px 10px;
+	font-size: 15px;
+	background-color: #ff9ffb;
+	border: 1px solid #000;
+	margin-top: 50px;
+	border-radius: 3px;
+	outline: 0px;
+}
+
+.contacto form textarea{
+	max-width: 530px;
+	min-width: 530px;
+	max-height: 150px;
+	min-height: 140px;
+}
+.contacto .btn-enviar{
+	padding: 15px;
+	margin-top: 10px;
+	font-size: 16px;
+	border: none;
+	float: right;
+	outline: 0px;
+	background-color: #101010;
+	color: #FFF;
+	border-radius: 3px;
+	cursor: pointer;
+
+}
+
+.foot_contenedor{
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background-color: #101010;
+}
+
+.foot_contenedor h2{
+	color: #fFFFFF;
+	font-size: 35px;
+}
+
+.social{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.social a{
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	padding: 10px;
+	justify-content: space-around;
+	font-size: 25px;
+	color: #fff;
+
+}
+
+.social i{
+	margin-right: 10px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.aviso{
+ 	display: flex;
+	width: 100%;
+	background-color: #ffc0cb;
+	justify-content: center;
+	align-items: center;
+}
+
+.aviso a{
+	text-decoration: none;
+	padding: 3px;
+	font-size: 15px;
+	color: #000;
+}
+
+/* Responsive desing mobil */
+
+@media screen and (max-width: 1080px){
+	
+	*{
+		font-size: 20px;
+	}
+
+	header{
+		width: 100%;
+		height: 450px;
+	}
+
+	.ann-titulo{
+		width: 100%;
+		height: 450px;
+	}
+
+	.ann-titulo h1{
+		font-size: 33px;
+	}
+	.quienes img, .cursos img, .servicios img{
+	width: 500px;
+}
+
+	.contacto{
+
+		grid-gap: 20px;
+
+	}
+
+	.contacto form .campo, textarea{
+
+		padding: 15px 10px;
+	}
+
+	.contacto form textarea{
+		max-width: 400px;
+		min-width: 400px;
+		max-height: 110px;
+		min-height: 100px;
+	}
+
+
+@media screen and (max-width: 800px){
+
+	#icon-menu{
+		display: flex;
+	}
+
+	.ann-titulo h1{
+		display: none;
+	}
+
+	.menu-ann{
+		display: flex;
+	}
+
+	.texto{
+		padding: 5px;
+	}
+
+	.texto p, a{
+		font-size: 16px;
+	}
+
+	.texto h2{
+		font-size: 25px;
+		padding: 10px;
+	}
+
+	.quienes img, .cursos img, .servicios img{
+	width: 400px;
+	}
+
+	.nav_ul{
+
+		width: 300px;
+		height: 100vh;
+		top: 50px;
+		left: 0px;
+		overflow: hidden;
+		flex-direction: column;
+		justify-content: start;
+		display: none;
+
+	}
+
+	.nav_li {
+
+		max-width: 250px;
+		height: 60px;
+		text-align: center;
+	}
+
+	.servicios, .cursos, .quienes, .faqs{
+		padding: 20px;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+
+	.contacto{
+
+		grid-gap: 20px;
+
+	}
+
+
+	.contacto form .campo, textarea{
+
+		padding: 15px 10px;
+	}
+
+	.contacto form textarea{
+		max-width: 330px;
+		min-width: 330px;
+		max-height: 110px;
+		min-height: 100px;
+	}
+
+	.foot_contenedor h2{
+		font-size: 25px;
+	}
+
+	.social a{
+		font-size: 13px;
+	}
+
+	.social i{
+		font-size: 15px;
+	}
+
+
+
+@media screen and (max-width: 600px){
+
+	*{
+		font-size: 18px;
+	}
+
+	header{
+		width: 100%;
+		height: 250px;
+	}
+	header h1{
+		font-size: 15px;
+	}
+
+	.texto p, a{
+		font-size: 13px;
+	}
+
+	.servicios, .cursos, .quienes, .faqs{
+		padding: 10px;
+	}
+
+	.quienes img, .cursos img, .servicios img{
+	width: 300px;
+}
+
+	.contacto{
+
+		grid-gap: 10px;
+
+	}
+
+	.contacto form .campo, textarea{
+
+		padding: 15px 10px;
+	}
+
+	.contacto form textarea{
+		max-width: 160px;
+		min-width: 160px;
+		max-height: 80px;
+		min-height: 70px;
+	}
+	.social a{
+		font-size: 10px;
+	}
+
+	.social i{
+		font-size: 12px;
+	}
+
