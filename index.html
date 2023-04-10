@@ -7,9 +7,14 @@
 	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
 	<script src="https://kit.fontawesome.com/36be628f9e.js" crossorigin="anonymous"></script>
 	<style> @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Raleway:ital@1&display=swap');</style>
-	<script defer src="js/codigo.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	
 </head>
 <body>
+	<div class="obs"></div>
 	<header>
 			<div class="ti_h1">
 				<h1>AnnLash Mink</h1>
@@ -19,11 +24,10 @@
 			</button>
 		<nav class="nav">
 			<ul id="menu-respo" class="nav_ul">		
-				<li><a href="#Servicios">Servicios</a></li>
-				<li><a href="#Cursos">Cursos</a></li>
-				<!--<li class="nav_li"><a href=""><img class="navlogo" src="logoannlashmink.jpg"></a></li>-->
-				<li><a href="#Quienes">Quienes Somos</a></li>
-				<li><a href="#Faqs">FAQ'S</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#cursos">Cursos</a></li>
+				<li><a href="#quienes">Quienes Somos</a></li>
+				<li><a href="#faqs">FAQ'S</a></li>
 				<li><a href="#contactanos">Contactanos</a></li>
 			</ul>
 		</nav>
@@ -31,32 +35,85 @@
 		</div>
 	</header>
 		<div class="contenedor">
-			<div id="Servicios" class="servicios">
-				<img src="imagenes/servicios1.jpg">
+			<div id="servicios" class="servicios">
+				<div class="conteiner-slider-servicios">
+					<div class="slider-style-servicios" id="slider-servicios">
+						<div class="slider_section-servicios">
+							<img src="imagenes/servicios1.jpg" alt="servicios 1" class="slider_img">
+						</div>
+						<div class="slider_section-servicios">
+							<img src="imagenes/servicios2.jpg" alt="servicios 2" class="slider_img">
+						</div>
+						<div class="slider_section-servicios">
+							<img src="imagenes/servicios3.jpg" alt="servicios 3" class="slider_img">
+						</div>
+						<div class="slider_section-servicios">
+							<img src="imagenes/servicios4.jpg" alt="servicios 4" class="slider_img">
+						</div>
+					</div>
+				</div>
 				<div class="texto">
 					<h2>Servicios</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur 	adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="saber-mas">
+						<button type="button" class="mas">Saber mas...</button>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div id="Cursos" class="cursos">
-			<img src="imagenes/cursos1.jpg">
+		<div id="cursos" class="cursos">
+			<div class="conteiner-slider-cursos">
+					<div class="slider-cursos" id="slider-cursos">
+						<div class="slider_section-cursos">
+							<img src="imagenes/cursos1.jpg" alt="cursos 1" class="slider_img">
+						</div>
+						<div class="slider_section-cursos">
+							<img src="imagenes/cursos2.jpg" alt="cursos 2" class="slider_img">
+						</div>
+						<div class="slider_section-cursos">
+							<img src="imagenes/cursos3.jpg" alt="cursos 3" class="slider_img">
+						</div>
+						<div class="slider_section-cursos">
+							<img src="imagenes/cursos4.jpg" alt="cursos 4" class="slider_img">
+						</div>
+					</div>
+				</div>
 			<div class="texto">
 				<h2>Cursos</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur 	adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="parag">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="saber-mas">
+					<button type="button" class="mas">Saber mas...</button>
+				</div>
 			</div>
 		</div>
-		<div id="Quienes" class="quienes">
-			<img src="imagenes/annquienes.jpg">
+		<div id="quienes" class="quienes">
+			<div class="conteiner-slider-quienes">
+					<div class="slider-quienes" id="slider-quienes">
+						<div class="slider_section-quienes">
+							<img src="imagenes/annquienes1.jpg" alt="quienes 1" class="slider_img">
+						</div>
+						<div class="slider_section-quienes">
+							<img src="imagenes/quienes2.jpg" alt="quienes 2" class="slider_img">
+						</div>
+						<div class="slider_section-quienes">
+							<img src="imagenes/quienes3.jpg" alt="quienes 3" class="slider_img">
+						</div>
+						<div class="slider_section-quienes">
+							<img src="imagenes/quienes4.jpg" alt="quienes 4" class="slider_img">
+						</div>
+					</div>
+				</div>
 				<div class="texto">
 					<h2>¿Quienes somos?</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 	do eiusmod
@@ -65,17 +122,62 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="saber-mas">
+						<button type="button" class="mas">Saber mas...</button>
+					</div>
 				</div>
 		</div>
-		<div id="Faqs" class= "faqs">
+		<div id="faqs" class= "faqs">
 				<div class="texto">
 					<h2>FAQ's</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class = "pregunta" id = "pregunta1">
+						<button class="faqs_expandir">Lorem ipsum, dolor sit</button>
+						<div class="respuesta">
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo aspernatur expedita, earum delectus enim itaque quasi inventore sit, sequi ducimus blanditiis aperiam animi quidem totam quod adipisci dolorum optio labore?
+							</p>
+						</div>
+					</div>
+					<div class = "pregunta" id = "pregunta2">
+					<button class="faqs_expandir">amet consectetur adipisicing elit</button>
+					<div class="respuesta">
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo aspernatur expedita, earum delectus enim itaque quasi inventore sit, sequi ducimus blanditiis aperiam animi quidem totam quod adipisci dolorum optio labore?
+							</p>
+						</div>
+					</div>
+					<div class = "pregunta" id = "pregunta3">
+					<button class="faqs_expandir">Quos asperiores repellat voluptatem </button>
+					<div class="respuesta">
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo aspernatur expedita, earum delectus enim itaque quasi inventore sit, sequi ducimus blanditiis aperiam animi quidem totam quod adipisci dolorum optio labore?
+							</p>
+						</div>
+					</div>
+					<div class = "pregunta" id = "pregunta4">
+					<button class="faqs_expandir">labore fugiat vitae excepturi</button>
+					<div class="respuesta">
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo aspernatur expedita, earum delectus enim itaque quasi inventore sit, sequi ducimus blanditiis aperiam animi quidem totam quod adipisci dolorum optio labore?
+							</p>
+						</div>
+					</div>
+					<div class = "pregunta" id = "pregunta5">
+					<button class="faqs_expandir">praesentium earum ducimus</button>
+					<div class="respuesta">
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo aspernatur expedita, earum delectus enim itaque quasi inventore sit, sequi ducimus blanditiis aperiam animi quidem totam quod adipisci dolorum optio labore?
+							</p>
+						</div>
+					</div>
+					<div class = "pregunta" id = "pregunta6">
+					<button class="faqs_expandir">quod debitis itaque, ullam reprehenderit</button>
+					<div class="respuesta">
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo aspernatur expedita, earum delectus enim itaque quasi inventore sit, sequi ducimus blanditiis aperiam animi quidem totam quod adipisci dolorum optio labore?
+							</p>
+						</div>
+					</div>
 				</div>
 		</div>
 		<div id="contactanos" class= "contacto">
@@ -111,5 +213,6 @@
 			</div>
 		</div>
 	</footer>
+	<script defer src="js/codigo.js"></script>
 </body>
 </html>

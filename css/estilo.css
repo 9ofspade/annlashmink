@@ -149,22 +149,40 @@ header{
 .texto p{
 	font-family: 'Raleway', sans-serif;
 	padding: 20px;
-	max-width: 	500px;		
+	max-width: 	650px;		
 }
 
 .texto{
 	width: 100%;
-	padding: 20px 0px 20px 20px;
+	padding: 20px 0px 20px 5px;
 }
 
+.saber-mas{
+	z-index: 999;
+	max-width: 650px;
+	text-align: right;
+	cursor: pointer;
+}
 
-.quienes{
-	display: flex;
-	padding: 50px 0px 50px 50px;
-	max-width: 1500px;
-	margin: auto;
-	scroll-margin-top: 35px;
- }
+.cursos .saber-mas{
+	text-align: left;
+	margin-left: auto;
+}
+
+.mas{
+	font-family: inherit;
+	text-decoration: underline;
+	color: #000;
+	font-size: var(--step-1);
+	transition: all .3s;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.mas:hover{
+	font-weight: 600;
+}
 
 .quienes h2 , .cursos h2 , .servicios h2, .faqs h2, .contacto h2{
 	background-color: #101010;
@@ -173,30 +191,66 @@ header{
 	padding: 20px;
 }
 
-.quienes img, .cursos img, .servicios img{
-	width: 60%;
-	max-width: 500px;
+.conteiner-slider-servicios, .conteiner-slider-cursos, .conteiner-slider-quienes{
+	width: 90%;
+	position: relative;
+	max-width: 400px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px;
+}
+
+.slider-style-servicios, .slider-cursos, .slider-quienes{
+	display: flex;
+	width: 400%;
+	height: 100%;
+	margin-left: 0;
+}
+
+.slider_section, .slider_section-servicios, .slider_section-cursos, .slider_section-quienes{
+	width: 100%;
+}
+
+.slider_img{
+	width: 100%;
+	height: 100%;
+	display: block;
 	object-fit: cover;
+}
+
+
+.quienes{
+	display: flex;
+	padding: 10px 0px 10px 10px;
+	margin: 50px 0px 50px 50px;
+	max-width: 1500px;
+	scroll-margin-top: 35px;
 }
 
 .cursos{
 	display: flex;	
 	flex-direction: row-reverse;
-	padding: 50px 50px 50px 0px;
+	padding: 10px 10px 10px 0px;
+	margin: 50px 50px 50px 0px;
 	max-width: 1500px;
-	margin: auto;
 	scroll-margin-top: 35px;
 }
 
 .cursos .texto{
-	padding: 20px 20px 20px 0px;
+	padding: 20px 5px 20px 0px;
+	text-align: right;
+}
+
+.parag{
+	width: 100%;
+	max-width: 650px;
+	margin-left: auto;
 }
 
 .servicios{
 	display: flex;
-	padding: 50px 0px 50px 50px;
+	padding: 10px 0px 10px 10px;
+	margin: 50px 0px 50px 50px;
 	max-width: 1500px;
-	margin: auto;
 	scroll-margin-top: 35px;
 }
 
@@ -205,9 +259,9 @@ header{
 	width: 100%;
 	display: flex;
 	text-align: center;
-	padding: 50px 0px 50px 0px;
+	padding: 10px 0px;
+	margin: 50px 0px;
 	max-width: 1500px;
-	margin: auto;
 	scroll-margin-top: 35px;
 }
 
@@ -218,15 +272,51 @@ header{
 	margin: auto;
 }
 
-.faqs p{
-	width: 100%;
-	padding: 10px 50px;
-
-}
-
 .faqs h2{
 	width: 100%;
 	padding: 20px;
+}
+
+.respuesta p{
+	text-align: center;
+	margin: auto;
+}
+
+.faqs_expandir{
+	width: 85%;
+	padding: 10px 50px;
+	margin-top: 15px;
+	font-family: inherit;
+	color: #000;
+	font-size: var(--step-1);
+	background: #dfdfdf;
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	transition: border-radius .3s ease-in;
+}
+
+.semi-rad{
+	border-radius: 50px 50px 0px 0px;
+}
+
+.respuesta{
+	position: relative;
+	overflow: hidden;
+	width: 85%;
+	height: 0;
+	margin: auto;
+	color: #000;
+	font-size: var(--step-0);
+	background: #dfdfdf;
+	border-radius: 0px 0px 50px 50px;
+	transition: all .6s ease-in;
+}
+
+.respuesta-abrir{
+	height: 10em;
+	padding: 10px 50px;
+	transition: all .6s ease-in;
 }
 
 .contacto{
@@ -244,6 +334,7 @@ header{
 .contacto .texto{
 	background-color: #101010 ;
 	border-bottom: solid #FFF 3px;
+	padding: 20px;
 }
 
 .contacto h2{
@@ -257,9 +348,8 @@ header{
 }
 
 .contacto a{
-	display: inline-block;
+	display: block;
 	text-decoration: none;
-	width: 100%;
 	padding-bottom: 5px;
 	margin: 25px;
 	font-weight: 700;
@@ -271,7 +361,7 @@ header{
 	content: "";
 	display: inline-block;
 	position: absolute;
-	width: 45%;
+	width: 100%;
 	height: 5px;
 	bottom: 0px;
 	left: 0px;
@@ -434,7 +524,7 @@ header{
 	align-items: center;
 	display: flex;
 	font-size: var(--step-2);
-	transition: left .3s;
+	transition: left .5s;
 	}
 
 	#icon-menu{
